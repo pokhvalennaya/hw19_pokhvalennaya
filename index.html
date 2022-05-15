@@ -28,32 +28,41 @@
     <title>Document</title>
   </head>
   <body>
-    <form id="figureForm" class="row">
-      <div class="col">
-        <select class="form-select form-select-sm" name="" id="selectFigure">
-          <option selected>Select figure</option>
-          <option value="Square" class="square" name="selectFigure">
-            Square
-          </option>
-          <option value="Rectangle" class="rectangle" name="selectFigure">
-            Rectangle
-          </option>
-          <option value="Circle" class="circle" name="selectFigure">
-            Circle
-          </option>
-        </select>
+    <form id="figureForm" class="container">
+      <div class="row">
+        <div class="col-md-auto">
+          <label class="form-label sr-only">Select figure</label>
+          <select class="form-select form-select-sm" name="" id="selectFigure">
+            <option selected value="Square" class="square" name="selectFigure">
+              Square
+            </option>
+            <option value="Rectangle" class="rectangle" name="selectFigure">
+              Rectangle
+            </option>
+            <option value="Circle" class="circle" name="selectFigure">
+              Circle
+            </option>
+          </select>
+        </div>
+        <div class="col-md-auto">
+          <div
+            id="figure"
+            class="square"
+            style="background-color: #ff0000"
+          ></div>
+        </div>
       </div>
-      <div class="col">
-        <label class="form-label"> Choose color: </label>
-        <input
-          type="color"
-          class="form-control form-control-color"
-          name="color"
-          id="color"
-          value="#ff0000"
-        />
+      <div class="row">
+        <div class="col-md-auto">
+          <label class="form-label sr-only">Select color</label>
+          <input
+            type="color"
+            class="form-control form-control-color"
+            id="color"
+            value="#ff0000"
+          />
+        </div>
       </div>
     </form>
-    <div id="figure"></div>
   </body>
 </html>

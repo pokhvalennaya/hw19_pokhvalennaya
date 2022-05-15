@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("#figure").removeClass().addClass(className);
   });
 
-  $("#color").change(function (event) {
+  $("#color").on("input", function (event) {
     event.preventDefault();
     const color = event.target.value;
     $("#figure").css("background-color", color);
