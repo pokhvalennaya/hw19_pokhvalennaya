@@ -7,7 +7,6 @@ $(document).ready(function () {
 
   $("#color").on("input", function (event) {
     event.preventDefault();
-    const color = event.target.value;
-    $("#figure").css("background-color", color);
+    $("#figure").css("background-color", $(this).val());
   });
 });
